@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Atharva Bibave</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Atharva Bibave</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Atharva Bibave</h1>
+        <p class="section__text__p2">Software Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/AtharvaMainResume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/atharvabibave/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/athsb009"
+          />
+        </div>
+      </div>
+      
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about.JPG"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Full Stack Developer, Cloud Engineer, Blockchain Developer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.E. Computer Engineering<br />M.S. Computer Science</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              A passionate and dedicated computer science graduate student at the University of Houston. I have a strong foundation in programming, software development, and cloud computing. With experience across a diverse range of technologies and platforms, I am constantly seeking opportunities to apply my skills in real-world projects and explore new challenges. I believe in continuous learning and am excited to contribute my expertise to innovative teams and projects
+            </p>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!-- Frontend Development Column -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Advance</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Advance</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>NextJs</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tailwind</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Recoil</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Redux</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+    
+          <!-- Backend Development Column -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MongoDB</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Redis</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>REST API</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"ß
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Solidity</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+    
+          <!-- Cloud Skills Column -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Cloud Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>AWS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>GCP</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Docker</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Kubernetes</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Terraform</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Jenkins</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    
+    <div id="projects" class="project-section">
+      <p class="section__text__p1">Go Through My</p>
+      <h1 class="title">Projects</h1>
+      <div class="project-carousel">
+          <button class="btn prev" id="prevBtn">&lt;</button>
+          <div class="project-cards">
+              <div class="project-card" data-description="ZapDash is a workflow automation platform that integrates Solana and Gmail to reward users for completing tasks. When a user completes a quest, the system triggers two actions: transferring Solana to the user and sending an email notification to confirm the receipt of Solana. This ensures a seamless and efficient process for task-based rewards, enhancing both user experience and engagement.">
+                  <img src="assets/zap.png" alt="Project 1">
+                  <h2>ZapDash : WorkFlow Automation PLatform</h2>
+                  <div class="buttons">
+                      <a href="https://github.com/athsb009/Zapdash" class="btn">GitHub</a>
+                      <button class="btn know-more">Know More</button>
+                  </div>
+              </div>
+              <div class="project-card" data-description="DigiVote is an E-Voting decentralized blockchain platform built on the Ethereum blockchain to enable secure and transparent voting. Using Solidity-based smart contracts, it ensures tamper-proof, on-chain voting processes. The app integrates MetaMask for seamless user authentication and Ether.js for blockchain interaction. By incorporating Polygon as a Layer 2 solution, it reduces gas fees and increases scalability, offering a more efficient and cost-effective voting experience. The platform provides a user-friendly interface while ensuring the integrity and confidentiality of each vote.">
+                  <img src="assets/vote.png" alt="Project 2">
+                  <h2>DigiVote : Decentralized E-Voting Application</h2>
+                  <div class="buttons">
+                      <a href="https://github.com/athsb009/Evoting-blockchain" class="btn">GitHub</a>
+                      <button class="btn know-more">Know More</button>
+                  </div>
+              </div>
+              <div class="project-card" data-description="
+              CoderHouse is a voice-based social networking platform that allows users to connect and engage in real-time audio conversations. Users can join or create audio rooms, participate in group discussions, and communicate with others via voice, all within a live, interactive environment. The platform enables seamless voice streaming, allowing multiple users to speak and listen simultaneously without noticeable delay. CoderHouse also provides features like muting/unmuting participants and managing room memberships, making it ideal for hosting live discussions, virtual meetups, or collaborative sessions. The app’s emphasis on voice communication fosters authentic, real-time interactions.">
+                  <img src="assets/house.png" alt="Project 3">
+                  <h2>CoderHouse : Voice Social Networking Application</h2>
+                  <div class="buttons">
+                      <a href="https://github.com/athsb009/CodersHouse" class="btn">GitHub</a>
+                      <button class="btn know-more">Know More</button>
+                  </div>
+              </div>
+              <div class="project-card" data-description="SwiftMoney is a mobile payment platform that streamlines transactions by offering a seamless, secure, and efficient way for users to send and receive payments. The platform allows users to link their bank accounts or credit cards, enabling instant money transfers to friends, family, or businesses. SwiftMoney supports multiple currencies and provides a real-time transaction history, ensuring transparency and security. The integration with Stripe for payments ensures reliable processing, while user authentication and secure data handling are prioritized. Its user-friendly interface and responsive design make financial transactions swift and easy, ideal for both everyday users and businesses.">
+                  <img src="assets/money.png" alt="Project 4">
+                  <h2>SwiftMoney : Web Based Digital Wallet</h2>
+                  <div class="buttons">
+                      <a href="https://github.com/athsb009/SwiftMoney" class="btn">GitHub</a>
+                      <button class="btn know-more">Know More</button>
+                  </div>
+              </div>
+              <div class="project-card" data-description="PromptPedia is a dynamic platform that allows users to discover, share, and collaborate on creative writing prompts. It provides an interactive space for writers, students, and content creators to explore diverse prompt categories, fostering creativity and idea generation. Users can submit their own prompts, vote on favorites, and follow trending topics. The platform also supports community-driven content, enabling collaboration and discussion around shared writing exercises. With a focus on ease of use and accessibility, PromptPedia is the go-to resource for anyone seeking inspiration for their next writing project.">
+                  <img src="assets/prompt.png" alt="Project 5">
+                  <h2>PromptPedia : Social App For Finding Prompts</h2>
+                  <div class="buttons">
+                      <a href="https://github.com/athsb009/project-promptpedia" class="btn">GitHub</a>
+                      <button class="btn know-more">Know More</button>
+                  </div>
+              </div>
+          </div>
+          <button class="btn next" id="nextBtn">&gt;</button>
+      </div>
+      <div class="popup" id="popup">
+          <div class="popup-content">
+              <span class="close-btn">&times;</span>
+              <p id="project-description"></p>
+          </div>
+      </div>
+  </div>
+  <img
+  src="./assets/arrow.png"
+  alt="Arrow icon"
+  class="icon arrow"
+  onclick="location.href='./#contact'"
+/>
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">atharvastudy59@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/atharvabibave">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Atharva Bibave. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
